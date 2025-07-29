@@ -6,4 +6,4 @@ class Dog:
         return f"{self.name} says woof!"
 
 dog1 = Dog("Puppy")
-print(dog1.bark()) 
+print(dog1.bark())
