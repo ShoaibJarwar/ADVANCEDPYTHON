@@ -29,12 +29,12 @@ def main():
         elif cmd == "done":
             index = int(input("Enter task number to mark as complete: ")) - 1
             tracker.mark_task_done(index)
-            print("🎉 Task marked as complete.")
+            # print("🎉 Task marked as complete.")
 
         elif cmd == "delete":
             index = int(input("Enter task number to delete: ")) - 1
             tracker.delete_task(index)
-            print("🗑️  Task deleted.")
+            # print("🗑️  Task deleted.")
 
         elif cmd == "exit":
             print("👋 Exiting Task Tracker.")

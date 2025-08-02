@@ -17,11 +17,19 @@ class TaskTracker:
         if 0 <= index < len(self.tasks):
             del self.tasks[index]
             self.save()
+            print("🗑️  Task deleted.")
+        else:
+            print("⚠️ Unknown number.")
+
 
     def mark_task_done(self, index):
         if 0 <= index < len(self.tasks):
             self.tasks[index].mark_complete()
             self.save()
+            print("🎉 Task marked as complete.")
+        else:
+            print("⚠️ Unknown number.")
+
 
     def save(self):
         save_tasks(self.filepath, self.tasks)
