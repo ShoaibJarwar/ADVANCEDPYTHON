@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Reading Book",
+    "due_date": "02-08-2025",
+    "description": "Python book to be read",
+    "completed": true
+  }
+]
