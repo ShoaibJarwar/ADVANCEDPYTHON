@@ -13,7 +13,7 @@ print("\nAverage Grades per Student:")
 for i, avg in enumerate(avg_student):
     print(f"{students[i]}: {avg:.2f}")
 
-# Average per subject 
+# Average per subject
 avg_subject = np.mean(grades, axis=0)
 print("\nAverage Grades per Subject:", avg_subject)
 
