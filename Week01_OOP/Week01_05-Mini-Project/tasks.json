@@ -4,5 +4,17 @@
     "due_date": "02-08-2025",
     "description": "Python book to be read",
     "completed": true
+  },
+  {
+    "title": "Reading Python",
+    "due_date": "03-08-2025",
+    "description": "Python Pandas book to be read",
+    "completed": true
+  },
+  {
+    "title": "Pandas NumPy",
+    "due_date": "The Day After Tomorrow",
+    "description": "To become Data Scientist, this book is must to read",
+    "completed": true
   }
-]
+]                                  

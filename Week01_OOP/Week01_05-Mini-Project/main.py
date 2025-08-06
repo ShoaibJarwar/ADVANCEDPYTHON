@@ -7,16 +7,16 @@ def main():
     tracker = TaskTracker()
 
     while True:
-        print("\n📌 Commands: add, list, done, delete, exit")
+        print("\n📌 Commands: add, list, done, undone, delete, exit")
         cmd = input(">> ").strip().lower()
-
+        
         if cmd == "add":
             title = input("Title: ")
             due = input("Due date: ")
             desc = input("Description (optional): ")
             tracker.add_task(Task(title, due, desc))
             print("✅ Task added.")
-
+    
         elif cmd == "list":
             tasks = tracker.list_tasks()
             if not tasks:
@@ -30,6 +30,10 @@ def main():
             index = int(input("Enter task number to mark as complete: ")) - 1
             tracker.mark_task_done(index)
             # print("🎉 Task marked as complete.")
+ 
+        elif cmd == "undone":
+            index = int(input("Enter task number to mark as complete: ")) - 1
+            tracker.mark_task_undone(index)
 
         elif cmd == "delete":
             index = int(input("Enter task number to delete: ")) - 1

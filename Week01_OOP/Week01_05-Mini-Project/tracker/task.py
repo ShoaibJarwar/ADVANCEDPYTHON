@@ -8,6 +8,9 @@ class Task:
     def mark_complete(self):
         self.completed = True
 
+    def mark_incomplete(self):
+        self.completed = False
+
     def to_dict(self):
         return {
             "title": self.title,

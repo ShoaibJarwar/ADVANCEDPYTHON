@@ -10,7 +10,7 @@ def log_time(func):
         return result
     return wrapper
 
-def load_tasks(filepath):
+def load_tasks(filepath): 
     try:
         with open(filepath, "r") as f:
             data = json.load(f)
@@ -21,3 +21,4 @@ def load_tasks(filepath):
 def save_tasks(filepath, tasks):
     with open(filepath, "w") as f:
         json.dump([t.to_dict() for t in tasks], f, indent=2)
+    
