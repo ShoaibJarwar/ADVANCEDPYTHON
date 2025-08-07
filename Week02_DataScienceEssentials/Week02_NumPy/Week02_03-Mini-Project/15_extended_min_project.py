@@ -4,7 +4,6 @@ sys.stdout.reconfigure(encoding='utf-8') # To include emojis
 import time
 from collections import defaultdict
 
-
 # Set seed for reproducibility
 np.random.seed(35)
 
