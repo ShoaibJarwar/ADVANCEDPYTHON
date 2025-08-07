@@ -6,6 +6,7 @@ grades = np.random.randint(50, 100, size=(4, 5))  # 4 students, 5 subjects
 
 print("Grades:\n", grades)
 
+
 # Average per student
 avg_student = np.mean(grades, axis=1)
 print(avg_student)
