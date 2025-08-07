@@ -79,7 +79,6 @@ for student, failed in failed_subjects.items():
 
 
 
-
 # 11. Simple performance comparison (optional)
 big_list = list(range(1000000))
 start = time.time()
